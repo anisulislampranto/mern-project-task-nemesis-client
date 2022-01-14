@@ -3,8 +3,9 @@ import './Login.css'
 
 const Login = () => {
     return (
-        <>
-        <div className='login-card'>
+        
+        <div className='login-card'> 
+            <h2>Log In</h2>
             <div>
                 <label htmlFor="email">Email</label> <br />
                 <input type="email" />
@@ -15,7 +16,7 @@ const Login = () => {
             </div>
             <button>Log In</button>
         </div>
-        </>
+        
     );
 };
 

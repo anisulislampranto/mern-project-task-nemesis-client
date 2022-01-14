@@ -5,7 +5,17 @@ import './AddUser.css';
 const AddUser = () => {
     const {register,handleSubmit,formState: { errors }, } = useForm();
     const onSubmit = (data) => {
-        console.log(data)
+        fetch('http://localhost:4040/adduser', {
+            method:'POST',
+            headers: {'Content-type':'application/json'},
+            body: JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data) {
+                alert('User Added Succesfully')
+            }
+        })
     };
 
 
