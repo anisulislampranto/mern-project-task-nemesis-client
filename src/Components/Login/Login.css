@@ -1,0 +1,9 @@
+.login-card{
+    margin-left: 35%;
+    margin-top: 20%;
+    width: 200px;
+    padding: 50px;
+    box-shadow: 2px 4px 4px 4px gainsboro;
+    align-items: center;
+    border-radius: 10px;
+}
